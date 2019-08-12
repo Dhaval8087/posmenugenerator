@@ -1,0 +1,77 @@
+$primary: #3cb7d7;
+$secondary: #3296af;
+$success: #63b867;
+$info: #f0eff0;
+$warning: #ff9f1a;
+$danger: #ef6360;
+$light: #edf8fb;
+$dark: #11323b;
+$body-color: #1c5462;
+$text-muted: #d3d3d4;
+$bg-secondary: #fbfbfb;
+$white: #ffffff;
+$upload-bg:#d3d3d4;
+$upload-color:#7a7a7a;
+$input-placeholder-color: #7a7a7a;
+$mark-color: #ffedd5;
+$mark-list: #4a4a4a;
+$mark-list-background: #f0f5f7;
+$footer-success: #e2f2e2;
+$stat-data-item-background: #eff4f6;
+
+$width-col-special: 480px;
+$modal-inner-padding: 0;
+$table-accent-bg: $bg-secondary;
+$table-head-bg: $bg-secondary;
+$input-bg: $bg-secondary;
+
+$base_px: 16;
+$toRems: (1 / $base_px) + 0rem;
+
+$font-path: "fonts";
+$font-family-base: 'Lato', sans-serif;
+
+$font-size-base: 16;
+$font-size-normal: 14px;
+$font-size-sm: 10 * $toRems;
+
+$lead-font-size: 16 * $toRems;
+$small-font-size: 12 * $toRems;
+
+$headings-font-weight: normal;
+$h1-font-size: 22 * $toRems;
+$h2-font-size: 18 * $toRems;
+$font-size-large: 24px;
+
+$icomoon-font-family: "hera";
+$icomoon-font-path: $font-path;
+
+$icon-unmark: "\e91b";
+$icon-stat-dots: "\e91a";
+$icon-trash: "\e916";
+$icon-pdf: "\e917";
+$icon-pencil: "\e918";
+$icon-flag: "\e919";
+$icon-logo: "\e901";
+$icon-rounded-add: "\e929";
+$icon-dot: "\e915";
+$icon-neutral: "\e904";
+$icon-female: "\e903";
+$icon-male: "\e905";
+$icon-table-row-chevron: "\e906";
+$icon-sync: "\e907";
+$icon-exclamation: "\e908";
+$icon-cancel: "\e909";
+$icon-chevron: "\e900";
+$icon-check: "\e90a";
+$icon-spinner: "\e90b";
+$icon-clock: "\e90c";
+$icon-eye: "\e902";
+$icon-rounded-check: "\e90d";
+$icon-down-arrow: "\e90e";
+$icon-up-arrow: "\e90f";
+$icon-options: "\e910";
+$icon-bell: "\e911";
+$icon-left-arrow: "\e912";
+$icon-plus: "\e913";
+$icon-magnifier: "\e914";

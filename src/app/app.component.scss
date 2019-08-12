@@ -1,0 +1,11 @@
+@import '_base';
+.nav-link[data-toggle].collapsed:after {
+  content: "▾";
+}
+.sidebar{
+  background-color: $body-color;
+  a {
+    color: $text-muted;
+  }
+
+}

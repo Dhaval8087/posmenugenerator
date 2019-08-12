@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mg-header></mg-header>
+<div class="row no-gutters d-flex align-items-end">
+  <div class="col-12">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-2 collapse d-md-flex sidebar pt-2 min-vh-100" id="sidebar">
+              <ul class="nav flex-column flex-nowrap">
+                  <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                  <li class="nav-item">
+                      <a href="javascript:void(0);"  class="nav-link collapsed" (click)="onMenu()" data-toggle="#id">Coupons</a>
+                      <div [ngClass]="menucls" aria-expanded="false">
+                          <ul class="flex-column pl-2 nav">
+                              <li class="nav-item"><a class="nav-link py-0" [routerLink]="['/coupons/items']" routerLinkActive="router-link-active" >Items</a></li>
+                              <li class="nav-item"><a class="nav-link py-0" [routerLink]="['/coupons/categories']" routerLinkActive="router-link-active">Categories</a></li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <div class="col pt-2">
+              <router-outlet></router-outlet>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+@import '_base';
+
+.btn-add-event {
+  font-size: $font-size-normal;
+  margin-left: 63px;
+  &__icon {
+    font-size: $font-size-large;
+  }
+  &:hover {
+    background-color: $dark;
+  }
+
+}
+$table-accent-bg: $bg-secondary;
+$table-head-bg: $bg-secondary;
+$table-cell-padding: 0.9rem;
+
+$badge-font-weight: normal;
+$badge-padding-y: 10px;
+$badge-pill-padding-x: 1rem;
+
+.table-grid {
+  th {
+    position: sticky;
+    height: 25px;
+    color: $secondary !important;
+    vertical-align: middle;
+    top: 0;
+    box-shadow: 1px 1px $text-muted;
+    &:first-child,
+    &:last-child {
+      width: 20px;
+    }
+
+    &.no-hovered:hover {
+      background-color: $bg-secondary;
+    }
+
+    &:hover {
+      background-color: $light;
+    }
+
+  }
+  tr {
+    td {
+      height: 25px !important;
+      &.icon {
+        cursor: pointer;
+      }
+    }
+    &.lead:hover {
+      background-color: $light !important;
+    }
+    .lead {
+      font-weight: 500;
+    }
+  }
+  .table-striped {
+    tbody {
+      tr:nth-of-type(odd) {
+        background-color: transparent;
+      }
+      tr:nth-of-type(even) {
+        background-color: $bg-secondary;
+      }
+    }
+  }
+}
+

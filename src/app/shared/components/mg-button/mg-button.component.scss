@@ -1,0 +1,46 @@
+@import '_base';
+
+$kpiButtonBorderRadius: 12px;
+
+.btn-kpi {
+  color: $dark;
+  border: 1px solid $secondary;
+  -webkit-border-radius: $kpiButtonBorderRadius !important;
+  -moz-border-radius: $kpiButtonBorderRadius !important;
+  border-radius: $kpiButtonBorderRadius !important;
+  height: 90px;
+  width: 162px;
+
+  &__counter {
+    font-size: $h2-font-size;
+    font-weight: bold;
+  }
+
+  &__text {
+    line-height: 17px;
+    text-align: left;
+    font-size: 25px;
+  }
+
+  &:hover {
+    background-color: $text-muted;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.08);
+  }
+}
+
+
+@include media-breakpoint-between(xs, md){
+  .btn-kpi {
+    float:left;
+    padding: 10px 10px !important;
+    &__text {
+      font-size: 12px;
+    }
+
+    &__counter {
+      width: 40px;
+      height: 40px;
+      font-size: 16px !important;
+    }
+  }
+}

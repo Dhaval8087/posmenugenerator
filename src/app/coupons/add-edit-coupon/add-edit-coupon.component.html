@@ -1,0 +1,43 @@
+<form [formGroup]="categoryForm">
+  <div class="container-fluid px-5 pt-3 pt-md-5">
+    <div class="row form-group align-items-center">
+      <label class="col-12 col-md-3 control-label">Name</label>
+      <div class="col-4 col-md-6 col-12 p-0 boxed">
+        <input class="form-control text-capitalize"
+        name="name" formControlName="name" type="text" placeholder="name"
+        [ngClass]="{'is-invalid': categoryForm.get('name').touched && (!!categoryForm.get('name').errors?.required)}" />
+        <span *ngIf="categoryForm.get('name').touched && (!!categoryForm.get('name').errors?.required)"
+          class="text-danger form-check-label">
+          Name is mandatory.
+        </span>
+      </div>
+    </div>
+    <div class="row form-group align-items-center">
+      <label class="col-12 col-md-3 control-label">ID</label>
+      <div class="col-4 col-md-6 col-12 p-0 boxed">
+        <input class="form-control text-capitalize" name="id"
+        formControlName="id" type="text" placeholder="ID"
+        [ngClass]="{'is-invalid': categoryForm.get('id').touched && (!!categoryForm.get('id').errors?.required)}" />
+        <span *ngIf="categoryForm.get('id').touched && (!!categoryForm.get('id').errors?.required)"
+        class="text-danger form-check-label">
+        ID is mandatory.
+      </span>
+      </div>
+    </div>
+    <div class="row form-group align-items-center">
+      <label class="col-12 col-md-3 control-label">Crop ID</label>
+      <div class="col-4 col-md-6 col-12 p-0 boxed">
+        <input class="form-control text-capitalize" name="cropid" formControlName="cropid" type="text"
+          placeholder="Crop ID" />
+      </div>
+    </div>
+    <footer class="text-right py-5 p-4">
+      <button class="btn btn-light px-3 mr-3" type="button" ngbAutofocus id="cancel" (click)="onCancel()">
+        Cancel
+      </button>
+      <button class="btn btn-secondary px-3" type="button" (click)="onSave()" [disabled]="categoryForm.invalid">
+        Save
+      </button>
+    </footer>
+  </div>
+</form>
